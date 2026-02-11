@@ -56,15 +56,15 @@
             display-name = "Raise Layer";
 // ------------------------------------------------------------------------------------------------------------
 // |   `   | PLAY|VOL_D|VOL_U |K_PREV|K_NEXT|                   | MUTE |       |       |      |   +   |       |
-// |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
-// |   F1  | CTRL| ALT | GUI  |  F5  |  F6  |                   |      |   <-  |   v   |  ^   |  ->   |       |
+// |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   ^   |  9   |   0   |       |
+// |   F1  | CTRL| ALT | GUI  |  F5  |  F6  |                   |      |   <-  |   v   |  ->  |       |       |
 // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  K+  |   -   |   =   |  [   |   ]   |   \   |
 //                     |      |      |      |        |  |       |      |       |       |
             bindings = <
-&kp GRAVE &kp C_PLAY_PAUSE &kp C_VOL_DN &kp C_VOL_UP &kp K_PREV &kp K_NEXT                    &kp C_MUTE  &trans    &trans    &trans   &kp PLUS  &trans
-&kp GRAVE &kp N1           &kp N2       &kp N3       &kp N4     &kp N5                         &kp N6      &kp N7    &kp N8    &kp N9   &kp N0    &trans
-&kp F1    &kp LCTRL        &kp LALT     &kp LGUI     &kp F5     &kp F6                         &trans      &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &trans
-&kp F7    &kp F8           &kp F9       &kp F10      &kp F11    &kp F12   &trans   &trans       &kp KP_PLUS &kp MINUS &kp EQUAL &kp LBKT &kp RBKT  &kp BSLH
+&kp GRAVE &kp C_PLAY_PAUSE &kp C_VOL_DN &kp C_VOL_UP &kp K_PREV &kp K_NEXT                    &kp C_MUTE  &trans    &trans    &trans    &kp PLUS  &trans
+&kp GRAVE &kp N1           &kp N2       &kp N3       &kp N4     &kp N5                         &kp N6      &kp N7    &kp UP    &kp N9    &kp N0    &trans
+&kp F1    &kp LCTRL        &kp LALT     &kp LGUI     &kp F5     &kp F6                         &trans      &kp LEFT  &kp DOWN  &kp RIGHT &trans    &trans
+&kp F7    &kp F8           &kp F9       &kp F10      &kp F11    &kp F12   &trans   &trans       &kp KP_PLUS &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH
                                         &trans       &trans     &trans    &trans   &trans       &trans      &trans    &trans
             >;
 
