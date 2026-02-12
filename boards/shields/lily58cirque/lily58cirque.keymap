@@ -40,13 +40,13 @@
 // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
 // |  F1   |  F2 | RCLK| LCLK |  F5  |  F6  |                   |  F7  |  F8   |SCR_UP |  F10 |  F11  |  F12  |
 // |   `   |  !  |  @  |  #   |  $   |  %   |                   |  ^   |SCR_LT |SCR_DN |SCR_RT|   )   |   ~   |
-// | SHIFT |EP_ON|EP_OF|  RET |      |      |        |  |       |      |  -    |  +    |  {   |   }   | SHIFT |
+// | SHIFT |EP_ON|EP_OF|  RET |      |      |        |  |       |      |  -    |  =    |  {   |   }   | SHIFT |
 //                     |      |      |      |        |  |       |      |       |       |
             bindings = <
 &bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                 &trans    &trans          &trans          &trans           &trans    &trans
 &kp F1     &kp F2           &mkp RCLK         &mkp LCLK         &kp F5       &kp F6                       &kp F7    &kp F8          &msc SCRL_UP    &kp F10          &kp F11   &kp F12
 &kp GRAVE  &kp EXCL         &kp AT            &kp HASH          &kp DOLLAR   &kp PRCNT                    &kp CARET &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp RPAR  &kp TILDE
-&kp LSHFT  &ext_power EP_ON &ext_power EP_OFF &kp RET           &trans       &trans    &trans   &trans    &trans    &kp MINUS       &kp PLUS        &kp LBRC         &kp RBRC  &kp RSHFT
+&kp LSHFT  &ext_power EP_ON &ext_power EP_OFF &kp RET           &trans       &trans    &trans   &trans    &trans    &kp MINUS       &kp EQUAL       &kp LBRC         &kp RBRC  &kp RSHFT
                                               &trans            &trans       &trans    &trans   &trans    &trans    &trans          &trans
             >;
 
